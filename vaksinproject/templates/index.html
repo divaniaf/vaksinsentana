@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="row">
+        <div id="input_jumlah" class="col s12">
+            <form method="get" action="{% url 'analyze' %} ">
+                <div class="input-field col s4 m3 l2 offset-s2 offset-m2 offset-l2">
+                    <label for="{{ input_jumlah.jmlTwt.id_for_label }}">Masukkan Jumlah Tweet :</label>
+                    {{ input_jumlah.jmlTwt }}
+                </div>
+                <br>
+                <button class="btn blue accent-1" type="submit">Analyze
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

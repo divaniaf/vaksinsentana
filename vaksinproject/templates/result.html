@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block header %}
+    
+{% endblock %}
+
+{% block body %}
+    {% load static %}
+    <div class="row">
+        <center><h5>Hasil Dari Sentiment Vaksin Pada Twitter</h5></center>
+        <center><img src="{% static 'media/piechart.png' %}" alt="piechart"/></center>
+        <br>
+        <div id="numberoFTwt">
+            {{ output }}
+        </div>
+    </div>
+
+{% endblock %}

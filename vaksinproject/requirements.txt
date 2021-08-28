@@ -1,0 +1,13 @@
+textblob
+tweepy
+pycountry
+langdetect
+django
+django-heroku
+nltk
+pillow
+gunicorn
+pandas
+numpy
+matplotlib
+sklearn
